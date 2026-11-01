@@ -954,7 +954,7 @@ export const experience = {
     {
       role: 'Import Customs Manifest Specialist',
       company: 'Maersk Global Service Centre',
-      period: '2023 — Present',
+      period: 'Nov 2023 — Present',
       location: 'Philippines',
       current: true,
       summary:
@@ -968,7 +968,7 @@ export const experience = {
     {
       role: 'Senior Documentation Officer / IMPEX Coordinator',
       company: 'ATR International Freight Inc',
-      period: '2017 — 2023',
+      period: 'Aug 2017 — Nov 2023',
       location: 'Port Area, Manila',
       summary:
         'Managed end-to-end import air and sea manifest processing and submission through the e-Trade / e2m Customs System.',
@@ -978,6 +978,17 @@ export const experience = {
         'Handled manifest amendments, cargo updates, and shipment exceptions while meeting operational deadlines.',
         'Prepared and reviewed export shipping documents, including MAWB, HAWB, commercial invoice, packing list, export declaration, and shipping instructions.',
         'Coordinated air export shipments end to end, from booking through cargo uplift.',
+      ],
+    },
+    {
+      role: 'Liaison Officer',
+      company: 'Inspira Prime International Corp.',
+      period: 'Aug 2016 — May 2017',
+      location: 'Quezon City',
+      responsibilities: [
+        'Managed permit processing and regulatory compliance requirements with BIR, LGUs, Barangay Offices, and other government agencies.',
+        'Facilitated business permit applications, renewals, registrations, and documentary submissions.',
+        'Maintained working relationships with government offices, banks, and external stakeholders.',
       ],
     },
     {
@@ -996,24 +1007,13 @@ export const experience = {
     {
       role: 'Census Area Supervisor',
       company: 'Philippine Statistics Authority',
-      period: '2013 — 2015',
+      period: 'Aug 1 — 31, 2015',
       location: 'Tacloban City, Leyte',
       responsibilities: [
         'Supervised field operations to ensure accurate data collection and adherence to protocols.',
         'Trained and mentored enumerators on data gathering techniques and best practices.',
         'Coordinated logistics for census activities, improving resource allocation and efficiency.',
-        'Reviewed collected data for consistency and identified discrepancies for timely resolution.',
-      ],
-    },
-    {
-      role: 'Liaison Officer',
-      company: 'Inspira Prime International Corp.',
-      period: '2013 — 2015',
-      location: 'Quezon City',
-      responsibilities: [
-        'Managed permit processing and regulatory compliance requirements with BIR, LGUs, Barangay Offices, and other government agencies.',
-        'Facilitated business permit applications, renewals, registrations, and documentary submissions.',
-        'Maintained working relationships with government offices, banks, and external stakeholders.',
+        'Reviewed collected data for consistency, identifying discrepancies for timely resolution.',
       ],
     },
   ] as ExperienceRole[],
