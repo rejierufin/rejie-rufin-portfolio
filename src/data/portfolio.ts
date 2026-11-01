@@ -534,7 +534,7 @@ export const projects: Project[] = [
     tools: [
       'Microsoft Power Apps (concept design)',
       'AI-assisted no-code application development',
-      'Microsoft Excel / Microsoft 365 data sources',
+      'Microsoft Excel data sources',
     ],
     contribution: [
       'Defined the operational requirements and the questions each view must answer.',
