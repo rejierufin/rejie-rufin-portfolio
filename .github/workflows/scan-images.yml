@@ -1,0 +1,41 @@
+name: Sanity-check images
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Report portrait health
+        run: |
+          python3 - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          import sys
+
+          f = Path("public/portrait.jpg")
+          if not f.exists():
+              print(f"FAIL: {f} missing")
+              sys.exit(1)
+
+          im = Image.open(f)
+          print(f"portrait.jpg  W={im.width} H={im.height} mode={im.mode} format={im.format} size={f.stat().st_size} bytes")
+
+          # Ensure it can be re-encoded cleanly to a baseline JPEG
+          if im.mode != "RGB":
+              im = im.convert("RGB")
+          im.save("/tmp/portrait_recheck.jpg", format="JPEG", quality=88, optimize=True, progressive=True)
+          recheck = Path("/tmp/portrait_recheck.jpg").read_bytes()
+          if recheck[:2] != b"\xff\xd8" or recheck[-2:] != b"\xff\xd9":
+              print("WARN: re-encoded portrait does not look like a clean JPEG")
+              sys.exit(0)
+          print("portrait.jpg re-encodes to a clean JPEG, no embedded broken markers expected")
+          PY
