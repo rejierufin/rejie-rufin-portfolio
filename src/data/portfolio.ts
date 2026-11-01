@@ -960,11 +960,9 @@ export const experience = {
       summary:
         'Preparing, validating, and submitting import customs manifests for shipments arriving in Vietnam and Cambodia, with accuracy and deadline adherence as the operating standard.',
       responsibilities: [
-        'Prepare, validate, and submit import customs manifests for shipments arriving in Vietnam and Cambodia accurately and on time.',
+        'Ensure import customs manifests for shipments arriving in Vietnam and Cambodia are prepared, validated, and submitted accurately, on time, and in compliance.',
         'Maintain a high level of accuracy and timely completion of customs manifest reporting.',
         'Work within freight forwarding and ocean freight import operations, coordinating with stakeholders to keep shipment information consistent.',
-        'Support operational reporting and review recurring manual steps for improvement opportunities.',
-        'Explore Microsoft Power Apps and AI-assisted no-code tools to prototype practical solutions for operational tracking and validation.',
       ],
     },
     {
