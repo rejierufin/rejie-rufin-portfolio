@@ -77,6 +77,12 @@ along with the labels displayed for the LinkedIn and GitHub links.
 prebuilt Worker in [`worker/worker.js`](worker/worker.js) plus [`deploy.json`](deploy.json) serve the
 build with a single-page fallback.
 
+GitHub Pages publishes `https://rejierufin.github.io/rejie-rufin-portfolio/` through
+[`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml), which builds with
+`BASE_PATH=/rejie-rufin-portfolio/`. Pages must publish from **GitHub Actions**, not from a branch: a
+branch build serves this repository's source `index.html`, whose `/src/main.tsx` script does not exist
+in a build, so the page renders blank and the resume link answers with GitHub's 404 page.
+
 ## Structure
 
 ```
