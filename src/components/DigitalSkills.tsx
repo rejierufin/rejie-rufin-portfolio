@@ -8,15 +8,15 @@ export function DigitalSkills() {
     <section className="section section--soft" id="skills">
       <div className="wrap">
         <SectionHead
-          eyebrow="05 — Digital Skills"
-          title="Digital Tools & Technology"
-          lead="Tools used to design, prototype, and support operational solutions — presented as supporting capability, alongside the operations knowledge they serve."
+          eyebrow="05 — Skills"
+          title="Skills & Tools"
+          lead="Freight forwarding capability, process and digital solution skills, the systems I work in daily, and the professional strengths that carry the work."
         />
 
         <div className="skills-grid">
           {skillGroups.map((group, groupIndex) => (
             <article
-              className={`skill-panel${groupIndex === 2 ? ' skill-panel--accent' : ''}`}
+              className={`skill-panel${groupIndex === 1 ? ' skill-panel--accent' : ''}`}
               key={group.title}
               data-reveal
               style={{ '--d': `${groupIndex * 90}ms` } as CSSProperties}

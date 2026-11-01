@@ -27,10 +27,11 @@ square brackets so they are easy to find.
 | Freight forwarding capabilities | `expertiseCapabilities` |
 | Operational data & controls + data flow | `controlCapabilities`, `dataFlow` |
 | Process improvement | `processCapabilities`, `processStatement` |
-| Digital skills | `skillGroups` |
+| Skill groups and tools | `skillGroups` |
 | Featured solutions and full case studies | `projects` |
 | Method steps | `buildSteps` |
 | Experience roles, employers, dates, and duties | `experience` |
+| Education | `education` |
 | Value equation | `valueEquation` |
 | Innovation Lab concepts | `labProjects` |
 | Contact copy | `contact` |

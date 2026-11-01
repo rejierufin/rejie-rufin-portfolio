@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react'
-import { experience } from '../data/portfolio'
+import { education, experience } from '../data/portfolio'
 import { Icon } from './Icon'
 import { SectionHead } from './SectionHead'
 
@@ -83,6 +83,19 @@ export function Experience() {
             </li>
           ))}
         </ol>
+
+        <div className="exp-education" data-reveal>
+          <h3>Education</h3>
+          {education.map((item) => (
+            <div className="edu-row" key={item.degree}>
+              <div>
+                <h4 className="edu-degree">{item.degree}</h4>
+                <p className="edu-school">{item.school}</p>
+              </div>
+              <span className="edu-period">{item.period}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

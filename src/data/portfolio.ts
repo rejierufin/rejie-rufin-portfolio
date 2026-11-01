@@ -70,7 +70,7 @@ export const profile: Profile = {
   tagline: 'From Operational Challenges to Smarter Digital Solutions.',
   altTagline: 'Freight Forwarding Expertise. Smarter Processes. Digital Innovation.',
   positioning:
-    'Freight Forwarding Operations Specialist | Process Improvement | Microsoft Power Apps | AI-Assisted No-Code Solutions',
+    'Freight Forwarding & Shipping Operations Specialist | Process Improvement | Microsoft Power Apps | AI-Assisted No-Code Development',
   heroDescription:
     'I combine hands-on freight forwarding and shipping operations knowledge with process improvement, Microsoft Power Apps, and AI-assisted no-code development to design practical solutions for operational tracking, validation, workflow control, reporting, and business process improvement.',
   email: 'rejierufinxxxii@gmail.com',
@@ -86,7 +86,7 @@ export const navLinks = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
   { id: 'expertise', label: 'Expertise' },
-  { id: 'skills', label: 'Digital Skills' },
+  { id: 'skills', label: 'Skills' },
   { id: 'solutions', label: 'Solutions' },
   { id: 'experience', label: 'Experience' },
   { id: 'lab', label: 'Innovation Lab' },
@@ -102,7 +102,7 @@ export const heroIndicators = [
 ]
 
 export const aboutParagraphs = [
-  'I am a freight forwarding operations professional with hands-on knowledge of ocean freight processes, shipment documentation, manifest and EDI handling, operational validation, vessel monitoring, and pre-arrival controls.',
+  'I am a freight forwarding operations specialist with extensive expertise in ocean freight processes, shipment documentation, manifest and EDI handling, operational validation, vessel monitoring, and pre-arrival controls.',
   'Alongside my operations expertise, I have knowledge of Microsoft Power Apps and AI-assisted no-code development, allowing me to explore new ways of transforming operational requirements into practical digital solutions.',
   'My approach starts with understanding the actual business process. I identify operational pain points, map workflows, define business rules and exceptions, and translate those requirements into trackers, dashboards, validation tools, control centers, and application prototypes.',
   'For me, technology is not the starting point. The operational problem is.',
@@ -370,43 +370,59 @@ export interface SkillGroup {
 
 export const skillGroups: SkillGroup[] = [
   {
-    title: 'Microsoft & Business Tools',
-    caption: 'Everyday tools used to run, track, and report operational work.',
-    icon: 'grid',
+    title: 'Logistics & Freight Forwarding',
+    caption: 'The operational foundation — ocean and air freight work performed day to day.',
+    icon: 'ship',
     skills: [
-      { name: 'Microsoft Power Apps', note: 'Solution prototyping and application design' },
-      { name: 'Microsoft Excel', note: 'Operational trackers, validation, and reporting' },
-      { name: 'Microsoft Outlook', note: 'Operational correspondence and follow-ups' },
-      { name: 'Microsoft Teams', note: 'Coordination and operational handoffs' },
-      { name: 'Microsoft 365', note: 'Shared documents and team collaboration' },
+      { name: 'Freight Forwarding Operations', note: 'Ocean, air, and import/export operational flow' },
+      { name: 'Import Customs Manifest Processing', note: 'Preparation, validation, and submission' },
+      { name: 'Shipping Documentation', note: 'Bill of lading, MAWB, HAWB, and shipping instructions' },
+      { name: 'Customs Documentation', note: 'Import and export declarations and regulatory paperwork' },
+      { name: 'Import & Export Coordination', note: 'Booking through to cargo uplift' },
+      { name: 'Air & Sea Freight Documentation', note: 'Complete document sets across both modes' },
+      { name: 'Shipment Tracking & Monitoring', note: 'Vessel, voyage, and arrival visibility' },
     ],
   },
   {
-    title: 'Digital Solution Skills',
-    caption: 'How an operational requirement is turned into a structured application concept.',
+    title: 'Process & Digital Solutions',
+    caption: 'How an operational requirement becomes a structured, working application concept.',
     icon: 'app',
     skills: [
-      { name: 'Operational Dashboard Design', note: 'Views built around daily operational questions' },
-      { name: 'Workflow Design', note: 'Steps, owners, decisions, and handoffs' },
-      { name: 'Business Requirement Definition', note: 'Turning operational needs into clear rules' },
-      { name: 'Application Prototyping', note: 'Interactive concepts before full build' },
-      { name: 'Data Validation Design', note: 'Field checks, rules, and exception paths' },
-      { name: 'Business Rule Logic', note: 'Conditions, severity, and required actions' },
+      { name: 'Process Improvement', note: 'Finding and removing friction in daily workflows' },
+      { name: 'Process Mapping', note: 'Steps, owners, decisions, and handoffs' },
+      { name: 'Process Automation', note: 'Moving repeatable steps into structured tools' },
+      { name: 'Workflow Automation', note: 'Rules and routing that replace manual follow-up' },
+      { name: 'Data Validation', note: 'Field checks, rules, and exception paths' },
+      { name: 'Microsoft Power Apps', note: 'Application prototyping and solution design' },
+      { name: 'No-Code App Development', note: 'Fast, testable application concepts' },
+      { name: 'AI-Assisted Development', note: 'Building working concepts from defined requirements' },
     ],
   },
   {
-    title: 'AI & No-Code',
-    caption: 'AI-assisted development used to explore and prototype solution ideas quickly.',
-    icon: 'spark',
+    title: 'Systems & Microsoft Tools',
+    caption: 'The platforms and everyday tools used to run, track, and report operational work.',
+    icon: 'grid',
     skills: [
-      { name: 'AI-Assisted App Building', note: 'Building working concepts from defined requirements' },
-      { name: 'No-Code Application Prototyping', note: 'Fast, testable application concepts' },
-      { name: 'Prompt Engineering', note: 'Structuring instructions that produce usable output' },
-      { name: 'AI-Assisted UI/UX Design', note: 'Screens and flows for operational users' },
-      { name: 'AI-Assisted Workflow Design', note: 'Exploring process options before building' },
-      { name: 'Business Process Digitization', note: 'Moving manual steps into structured tools' },
-      { name: 'Requirements-to-Application Design', note: 'From business rules to working screens' },
-      { name: 'AI-Assisted Problem Solving', note: 'Testing solution approaches quickly' },
+      { name: 'e2m / e-Trade System', note: 'Import manifest processing and customs submission' },
+      { name: 'Microsoft Excel', note: 'Operational trackers, validation, and reporting' },
+      { name: 'Microsoft Word', note: 'Document preparation and correspondence' },
+      { name: 'Microsoft Outlook', note: 'Operational correspondence and follow-ups' },
+      { name: 'Microsoft Teams', note: 'Coordination and operational handoffs' },
+    ],
+  },
+  {
+    title: 'Professional Skills',
+    caption: 'How the work is carried — ownership, accuracy, and coordination under deadlines.',
+    icon: 'users',
+    skills: [
+      { name: 'Process Ownership', note: 'Accountability from first step to final submission' },
+      { name: 'Continuous Improvement', note: 'Refining the process, not just completing the task' },
+      { name: 'Attention to Detail', note: 'Accuracy in manifest and document data' },
+      { name: 'Problem Solving', note: 'Resolving discrepancies before they delay cargo' },
+      { name: 'Time Management', note: 'Working to time-sensitive regulatory deadlines' },
+      { name: 'Communication Skills', note: 'Clear updates across teams and stakeholders' },
+      { name: 'Cross-Functional Collaboration', note: 'Agents, carriers, brokers, and internal teams' },
+      { name: 'Adaptability & Flexibility', note: 'Shifting priorities in live operations' },
     ],
   },
 ]
@@ -954,70 +970,77 @@ export const experience = {
     {
       role: 'Import Customs Manifest Specialist',
       company: 'Maersk Global Service Centre',
-      period: 'Nov 2023 — Present',
+      period: 'November 27, 2023 — Present',
       location: 'Philippines',
       current: true,
       summary:
-        'Preparing, validating, and submitting import customs manifests for shipments arriving in Vietnam and Cambodia, with accuracy and deadline adherence as the operating standard.',
+        'Preparing and submitting import customs manifests for shipments arriving in Vietnam and Cambodia, with accuracy, timeliness, and compliance as the operating standard.',
       responsibilities: [
-        'Ensure import customs manifests for shipments arriving in Vietnam and Cambodia are prepared, validated, and submitted accurately, on time, and in compliance.',
-        'Maintain a high level of accuracy and timely completion of customs manifest reporting.',
-        'Work within freight forwarding and ocean freight import operations, coordinating with stakeholders to keep shipment information consistent.',
+        'Ensure the timely, accurate, and compliant preparation and submission of import customs manifests for shipments arriving in Vietnam and Cambodia.',
+        'Achieve high accuracy and timely completion of customs manifest reports.',
       ],
     },
     {
       role: 'Senior Documentation Officer / IMPEX Coordinator',
       company: 'ATR International Freight Inc',
-      period: 'Aug 2017 — Nov 2023',
-      location: 'Port Area, Manila',
+      period: 'August 2017 — November 24, 2023',
+      location: 'Port Area Manila',
       summary:
-        'Managed end-to-end import air and sea manifest processing and submission through the e-Trade / e2m Customs System.',
+        'Led end-to-end import air and sea manifest processing and submission through the e-Trade / e2m Customs System.',
       responsibilities: [
-        'Processed and submitted import air and sea manifests through the e-Trade / e2m Customs System in compliance with Philippine customs regulations.',
-        'Coordinated with international agents, airlines, shipping lines, and customs brokers to resolve documentation discrepancies and prevent cargo clearance delays.',
-        'Handled manifest amendments, cargo updates, and shipment exceptions while meeting operational deadlines.',
-        'Prepared and reviewed export shipping documents, including MAWB, HAWB, commercial invoice, packing list, export declaration, and shipping instructions.',
-        'Coordinated air export shipments end to end, from booking through cargo uplift.',
+        'Led end-to-end import air and sea manifest processing and submission through the e-Trade / e2m Customs System, ensuring accurate and timely customs compliance.',
+        'Collaborated with international agents, airlines, shipping lines, and customs brokers to resolve documentation discrepancies, amendments, and shipment exceptions.',
+        'Oversaw air export shipments from booking through cargo uplift, and prepared key shipping documents including MAWB, HAWB, commercial invoices, packing lists, export declarations, and shipping instructions.',
+        'Maintained accurate shipment data and documentation while meeting time-sensitive operational and regulatory requirements.',
       ],
     },
     {
       role: 'Liaison Officer',
       company: 'Inspira Prime International Corp.',
-      period: 'Aug 2016 — May 2017',
+      period: 'August 2016 — May 2017',
       location: 'Quezon City',
       responsibilities: [
-        'Managed permit processing and regulatory compliance requirements with BIR, LGUs, Barangay Offices, and other government agencies.',
-        'Facilitated business permit applications, renewals, registrations, and documentary submissions.',
-        'Maintained working relationships with government offices, banks, and external stakeholders.',
+        'Led permit processing, renewals, registrations, and regulatory documentation with BIR, LGUs, and other government agencies.',
+        'Coordinated with government offices, banks, and external stakeholders to ensure compliance and meet business requirements.',
       ],
     },
     {
       role: 'Administrative Staff',
-      company: 'Municipal Treasurers Office, Municipality of Isabel',
-      period: 'Feb 2016 — May 2016',
-      location: 'Philippines',
+      company: 'Municipal Treasurers Office',
+      period: 'February 2016 — May 2016',
+      location: 'Municipality of Isabel',
       responsibilities: [
-        'Posted and recorded daily disbursement transactions, keeping financial documentation accurate.',
-        'Supported payroll administration by preparing payslips and maintaining employee compensation records.',
-        'Uploaded and maintained employee BIR records and tax-related information.',
-        'Performed data entry, report generation, and administrative support for treasury operations.',
-        'Maintained confidentiality and accuracy of financial and employee records.',
+        'Optimized financial documentation, payroll administration, employee records, data entry, and treasury reporting.',
+        'Ensured accuracy and confidentiality of financial, tax-related, and employee records.',
       ],
     },
     {
       role: 'Census Area Supervisor',
       company: 'Philippine Statistics Authority',
-      period: 'Aug 1 — 31, 2015',
+      period: 'August 1 — 31, 2015',
       location: 'Tacloban City, Leyte',
       responsibilities: [
-        'Supervised field operations to ensure accurate data collection and adherence to protocols.',
-        'Trained and mentored enumerators on data gathering techniques and best practices.',
-        'Coordinated logistics for census activities, improving resource allocation and efficiency.',
-        'Reviewed collected data for consistency, identifying discrepancies for timely resolution.',
+        'Led field operations and coordinated census activities to support accurate and timely data collection.',
+        'Mentored and guided enumerators on data-gathering procedures and field protocols.',
+        'Optimized collected data for accuracy and consistency, identifying discrepancies for timely resolution.',
       ],
     },
   ] as ExperienceRole[],
 }
+
+export interface EducationEntry {
+  degree: string
+  school: string
+  period: string
+}
+
+export const education: EducationEntry[] = [
+  {
+    degree: 'Bachelor of Science in Shipping Management',
+    school: 'Palompon Institute of Technology',
+    period: 'June 2011 — March 2015',
+  },
+]
 
 export const valueEquation = {
   inputs: ['Freight Forwarding Knowledge', 'Process Understanding', 'Business Rules', 'Power Apps & AI-Assisted Tools'],
