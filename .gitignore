@@ -4,3 +4,4 @@ dist
 .DS_Store
 .vite.pid
 artifacts/
+/freebuff-sites-build/

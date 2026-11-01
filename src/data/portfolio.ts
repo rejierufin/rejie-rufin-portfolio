@@ -64,6 +64,9 @@ export interface Profile {
   resumeUrl: string
 }
 
+// Lives in public/. The build fails if this file is missing (scripts/check-resume.mjs).
+const RESUME_FILE = 'RUFIN_REJIE_RESUME.pdf'
+
 export const profile: Profile = {
   name: 'Rejie Rufin',
   shortName: 'REJIE RUFIN',
@@ -79,7 +82,7 @@ export const profile: Profile = {
   github: 'https://github.com/rejierufin',
   githubLabel: 'github.com/rejierufin',
   location: 'Philippines',
-  resumeUrl: '/RUFIN_REJIE_RESUME.pdf',
+  resumeUrl: `${import.meta.env.BASE_URL}${RESUME_FILE}`,
 }
 
 export const navLinks = [
