@@ -62,7 +62,6 @@ export interface Profile {
   githubLabel: string
   location: string
   resumeUrl: string
-  resumePassword: string
 }
 
 export const profile: Profile = {
@@ -80,9 +79,7 @@ export const profile: Profile = {
   github: 'https://github.com/rejierufin',
   githubLabel: 'github.com/rejierufin',
   location: 'Philippines',
-  // Password-protected PDF; shown next to the download button so visitors can open it.
   resumeUrl: '/RUFIN_REJIE_RESUME.pdf',
-  resumePassword: 'hiremenow2026',
 }
 
 export const navLinks = [

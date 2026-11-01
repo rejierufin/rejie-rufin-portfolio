@@ -57,9 +57,9 @@ The image is cropped with `object-fit: cover` and is never retouched or altered 
 The download buttons point to `profile.resumeUrl`, which defaults to `/RUFIN_REJIE_RESUME.pdf`
 (`public/RUFIN_REJIE_RESUME.pdf`). Replace that file to update the download.
 
-That PDF is encrypted with the password `hiremenow2026`, which is shown next to the download button in
-the Contact section. The value lives in `profile.resumePassword`; set it to an empty string to hide the
-note, and save an unencrypted PDF if you would rather not require a password.
+That PDF is password-protected. The password is deliberately not stored in this repository and not shown
+on the site, so share it with recruiters yourself. Save an unencrypted PDF at that path if you would
+rather not require a password.
 
 ## Contact details
 

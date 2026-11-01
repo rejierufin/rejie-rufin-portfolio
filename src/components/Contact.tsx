@@ -84,12 +84,6 @@ export function Contact() {
               </a>
             </div>
 
-            {profile.resumePassword ? (
-              <p className="contact-resume-note">
-                The resume PDF is password-protected. Password: <strong>{profile.resumePassword}</strong>
-              </p>
-            ) : null}
-
             <p className="contact-fineprint">
               Phone number and home address are intentionally not published.
             </p>

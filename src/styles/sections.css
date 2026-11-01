@@ -1589,19 +1589,6 @@ a.contact-item:hover .co-arrow {
   gap: 10px;
 }
 
-.contact-resume-note {
-  margin-top: 14px;
-  font-size: 0.76rem;
-  color: rgba(190, 216, 244, 0.72);
-  line-height: 1.6;
-}
-
-.contact-resume-note strong {
-  color: #cfe4ff;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-
 .contact-fineprint {
   margin-top: 8px;
   font-size: 0.7rem;

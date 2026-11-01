@@ -58,8 +58,7 @@ export function Footer() {
               <a
                 className="social-btn"
                 href={profile.resumeUrl}
-                aria-label={`Download resume (PDF password: ${profile.resumePassword})`}
-                title={`PDF password: ${profile.resumePassword}`}
+                aria-label="Download resume"
                 download
               >
                 <Icon name="download" size={16} />
