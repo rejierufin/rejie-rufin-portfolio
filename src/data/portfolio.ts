@@ -929,37 +929,96 @@ export const buildSteps = [
   },
 ]
 
+export interface ExperienceRole {
+  role: string
+  company: string
+  period: string
+  location: string
+  current?: boolean
+  summary?: string
+  responsibilities: string[]
+}
+
+// Taken directly from the resume: employers, titles, dates, locations, and duties.
 export const experience = {
-  role: 'ICM Specialist',
-  // ---- EDIT THESE PLACEHOLDERS -----------------------------------------
-  company: '[Add company name]',
-  period: '[Add employment dates]',
-  location: '[Add location]',
-  // ---------------------------------------------------------------------
-  summary:
-    'Working within freight forwarding and ocean freight import operations, covering shipment documentation, manifest and EDI handling, shipment data validation, pre-arrival controls, and operational exception handling — while coordinating with stakeholders, supporting operational reporting, and contributing to process improvement.',
-  responsibilities: [
-    'Handle import and pre-arrival operational requirements, including shipment documentation and mandatory shipment information.',
-    'Work with manifest and EDI data, applying operational validation before information moves forward.',
-    'Validate shipment, consignee, notify party, and commodity data against business rules and supporting documents.',
-    'Identify operational exceptions and route them to the appropriate action and owner.',
-    'Coordinate with internal teams and external parties to maintain a consistent shipment status.',
-    'Support operational reporting and review recurring manual steps for improvement opportunities.',
-    'Explore Microsoft Power Apps and AI-assisted no-code tools to prototype practical solutions for operational tracking and validation.',
-  ],
   themes: [
+    'Customs Manifest Processing',
     'Freight Forwarding',
-    'Ocean Freight Operations',
-    'Import Operations',
-    'Shipment Documentation',
+    'Import & Export Documentation',
     'Manifest / EDI Handling',
-    'Shipment Data Validation',
-    'Pre-Arrival Controls',
-    'Operational Exception Handling',
+    'Regulatory Compliance',
     'Stakeholder Coordination',
-    'Operational Reporting',
     'Process Improvement',
   ],
+  roles: [
+    {
+      role: 'Import Customs Manifest Specialist',
+      company: 'Maersk Global Service Centre',
+      period: '2023 — Present',
+      location: 'Philippines',
+      current: true,
+      summary:
+        'Preparing, validating, and submitting import customs manifests for shipments arriving in Vietnam and Cambodia, with accuracy and deadline adherence as the operating standard.',
+      responsibilities: [
+        'Prepare, validate, and submit import customs manifests for shipments arriving in Vietnam and Cambodia accurately and on time.',
+        'Maintain a high level of accuracy and timely completion of customs manifest reporting.',
+        'Work within freight forwarding and ocean freight import operations, coordinating with stakeholders to keep shipment information consistent.',
+        'Support operational reporting and review recurring manual steps for improvement opportunities.',
+        'Explore Microsoft Power Apps and AI-assisted no-code tools to prototype practical solutions for operational tracking and validation.',
+      ],
+    },
+    {
+      role: 'Senior Documentation Officer / IMPEX Coordinator',
+      company: 'ATR International Freight Inc',
+      period: '2017 — 2023',
+      location: 'Port Area, Manila',
+      summary:
+        'Managed end-to-end import air and sea manifest processing and submission through the e-Trade / e2m Customs System.',
+      responsibilities: [
+        'Processed and submitted import air and sea manifests through the e-Trade / e2m Customs System in compliance with Philippine customs regulations.',
+        'Coordinated with international agents, airlines, shipping lines, and customs brokers to resolve documentation discrepancies and prevent cargo clearance delays.',
+        'Handled manifest amendments, cargo updates, and shipment exceptions while meeting operational deadlines.',
+        'Prepared and reviewed export shipping documents, including MAWB, HAWB, commercial invoice, packing list, export declaration, and shipping instructions.',
+        'Coordinated air export shipments end to end, from booking through cargo uplift.',
+      ],
+    },
+    {
+      role: 'Administrative Staff',
+      company: 'Municipal Treasurers Office, Municipality of Isabel',
+      period: 'Feb 2016 — May 2016',
+      location: 'Philippines',
+      responsibilities: [
+        'Posted and recorded daily disbursement transactions, keeping financial documentation accurate.',
+        'Supported payroll administration by preparing payslips and maintaining employee compensation records.',
+        'Uploaded and maintained employee BIR records and tax-related information.',
+        'Performed data entry, report generation, and administrative support for treasury operations.',
+        'Maintained confidentiality and accuracy of financial and employee records.',
+      ],
+    },
+    {
+      role: 'Census Area Supervisor',
+      company: 'Philippine Statistics Authority',
+      period: '2013 — 2015',
+      location: 'Tacloban City, Leyte',
+      responsibilities: [
+        'Supervised field operations to ensure accurate data collection and adherence to protocols.',
+        'Trained and mentored enumerators on data gathering techniques and best practices.',
+        'Coordinated logistics for census activities, improving resource allocation and efficiency.',
+        'Reviewed collected data for consistency and identified discrepancies for timely resolution.',
+      ],
+    },
+    {
+      role: 'Liaison Officer',
+      company: 'Inspira Prime International Corp.',
+      period: '2013 — 2015',
+      location: 'Quezon City',
+      responsibilities: [
+        'Managed permit processing and regulatory compliance requirements with BIR, LGUs, Barangay Offices, and other government agencies.',
+        'Facilitated business permit applications, renewals, registrations, and documentary submissions.',
+        'Maintained working relationships with government offices, banks, and external stakeholders.',
+      ],
+    },
+  ] as ExperienceRole[],
 }
 
 export const valueEquation = {

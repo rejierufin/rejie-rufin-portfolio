@@ -30,15 +30,14 @@ square brackets so they are easy to find.
 | Digital skills | `skillGroups` |
 | Featured solutions and full case studies | `projects` |
 | Method steps | `buildSteps` |
-| Experience (employer / dates / location placeholders) | `experience` |
+| Experience roles, employers, dates, and duties | `experience` |
 | Value equation | `valueEquation` |
 | Innovation Lab concepts | `labProjects` |
 | Contact copy | `contact` |
 
-No employer, date, certification, promotion, metric, or client result is invented anywhere in the data
-file. The Experience section shows `[Add company name]`, `[Add employment dates]`, and `[Add location]`
-as visible placeholders until real details are supplied. Potential business value is described
-qualitatively only.
+Nothing is invented. The employers, job titles, employment dates, locations, and duties in the
+Experience section come directly from `RUFIN_REJIE_RESUME.pdf`. Potential business value in the case
+studies is described qualitatively only, with no metric or client result claimed.
 
 ## Replace the portrait
 

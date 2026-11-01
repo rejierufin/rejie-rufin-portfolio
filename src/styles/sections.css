@@ -1233,6 +1233,92 @@
   color: #4d8cff;
 }
 
+.exp-history {
+  margin-top: clamp(28px, 3.2vw, 44px);
+  border-top: 1px solid var(--line);
+}
+
+.exp-history-item {
+  display: grid;
+  grid-template-columns: minmax(0, 0.6fr) minmax(0, 1.4fr);
+  gap: clamp(14px, 3vw, 40px);
+  padding: clamp(20px, 2.4vw, 28px) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.eh-head {
+  display: grid;
+  gap: 4px;
+  align-content: start;
+}
+
+.eh-period {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.eh-role {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.eh-company {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--body);
+}
+
+.eh-company .sep {
+  opacity: 0.45;
+  font-weight: 400;
+}
+
+.eh-summary {
+  font-size: 0.84rem;
+  line-height: 1.66;
+  color: var(--body);
+  max-width: 66ch;
+  margin-bottom: 10px;
+}
+
+.eh-list {
+  display: grid;
+  gap: 7px;
+  max-width: 66ch;
+}
+
+.eh-list li {
+  position: relative;
+  padding-left: 15px;
+  font-size: 0.815rem;
+  line-height: 1.62;
+  color: var(--body);
+}
+
+.eh-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(47, 107, 255, 0.45);
+}
+
+@media (max-width: 760px) {
+  .exp-history-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+}
+
 /* ============ value equation ============ */
 
 .value {

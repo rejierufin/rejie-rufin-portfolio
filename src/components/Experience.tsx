@@ -3,10 +3,8 @@ import { experience } from '../data/portfolio'
 import { Icon } from './Icon'
 import { SectionHead } from './SectionHead'
 
-function Editable({ value }: { value: string }) {
-  const isPlaceholder = value.trim().startsWith('[')
-  return <span className={isPlaceholder ? 'placeholder-chip' : undefined}>{value}</span>
-}
+const current = experience.roles.find((item) => item.current) ?? experience.roles[0]
+const earlier = experience.roles.filter((item) => item !== current)
 
 export function Experience() {
   return (
@@ -15,20 +13,18 @@ export function Experience() {
         <SectionHead
           eyebrow="08 — Experience"
           title="Professional Experience"
-          lead="Operations experience described by the work performed — with employer, dates, and location deliberately left as editable placeholders."
+          lead="Import and export logistics experience across customs manifest processing, freight documentation, regulatory liaison, and administrative operations."
         />
 
         <div className="exp-grid">
           <aside className="exp-card" data-reveal>
             <span className="exp-status">Current role</span>
-            <h3 className="exp-role">{experience.role}</h3>
-            <p className="exp-company">
-              <Editable value={experience.company} />
-            </p>
+            <h3 className="exp-role">{current.role}</h3>
+            <p className="exp-company">{current.company}</p>
             <p className="exp-meta">
-              <Editable value={experience.period} />
+              <span>{current.period}</span>
               <span className="sep">·</span>
-              <Editable value={experience.location} />
+              <span>{current.location}</span>
             </p>
 
             <ul className="exp-themes" aria-label="Experience themes">
@@ -38,12 +34,12 @@ export function Experience() {
             </ul>
           </aside>
 
-          <div className="exp-body" data-reveal style={{'--d': '100ms'} as CSSProperties}>
+          <div className="exp-body" data-reveal style={{ '--d': '100ms' } as CSSProperties}>
             <h3>Scope &amp; responsibilities</h3>
-            <p className="exp-summary">{experience.summary}</p>
+            {current.summary ? <p className="exp-summary">{current.summary}</p> : null}
 
             <ul className="exp-list">
-              {experience.responsibilities.map((item) => (
+              {current.responsibilities.map((item) => (
                 <li key={item}>
                   <span className="el-mark" aria-hidden="true">
                     <Icon name="check" size={11} strokeWidth={2.4} />
@@ -55,11 +51,38 @@ export function Experience() {
 
             <p className="exp-note">
               <Icon name="info" size={14} />
-              Employer name, employment dates, and location are intentionally shown as placeholders. No company,
-              certification, promotion, award, or years-of-experience claim has been added.
+              Employers, titles, dates, and locations are taken directly from my resume. No certification,
+              promotion, award, or client result has been added.
             </p>
           </div>
         </div>
+
+        <ol className="exp-history" aria-label="Earlier roles">
+          {earlier.map((item, index) => (
+            <li
+              key={`${item.company}-${item.period}`}
+              className="exp-history-item"
+              data-reveal
+              style={{ '--d': `${index * 60}ms` } as CSSProperties}
+            >
+              <div className="eh-head">
+                <span className="eh-period">{item.period}</span>
+                <h4 className="eh-role">{item.role}</h4>
+                <p className="eh-company">
+                  {item.company} <span className="sep">·</span> {item.location}
+                </p>
+              </div>
+              <div>
+                {item.summary ? <p className="eh-summary">{item.summary}</p> : null}
+                <ul className="eh-list">
+                  {item.responsibilities.map((duty) => (
+                    <li key={duty}>{duty}</li>
+                  ))}
+                </ul>
+              </div>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   )
