@@ -61,6 +61,11 @@ That PDF is password-protected. The password is deliberately not stored in this 
 on the site, so share it with recruiters yourself. Save an unencrypted PDF at that path if you would
 rather not require a password.
 
+Keep the filename exactly as it is, and keep the file inside `public/`. If the path in `profile.resumeUrl`
+does not exist at build time the download silently returns the app shell, and the browser saves an HTML
+page as `RUFIN_REJIE_RESUME.htm` with the message "File wasn't available on site". `npm run build` now
+stops with an error in that case (`scripts/check-resume.mjs`), so the broken link cannot be deployed.
+
 ## Contact details
 
 Email, LinkedIn, GitHub, and location are set in `profile` at the top of `src/data/portfolio.ts`,
