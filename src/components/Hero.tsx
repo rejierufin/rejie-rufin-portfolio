@@ -69,7 +69,7 @@ export function Hero() {
           <div className="portrait-frame">
             {hasPhoto ? (
               <img
-                src="/portrait.jpg"
+                src={`${import.meta.env.BASE_URL}portrait.jpg`}
                 alt="Portrait of Rejie Rufin"
                 className="portrait-img"
                 onError={() => setHasPhoto(false)}
